@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,12 +16,17 @@ body {
 }
 
 .body_header{
-    height: 60em;
+    height: 48em;
 
 }
 
 .body_main{
     height: 70em;
 
+}
+
+.body_article{
+    height: 95em;
+    background-color: ghostwhite;
 }
 
