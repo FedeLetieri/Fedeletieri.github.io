@@ -2,15 +2,37 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="header.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cuentaRegresiva.js"></script>
 </head>
 <header class="header_container">
     <div class="container_content">
-        <img class="header_img" src="../static/2.jpg">
-        <p class="content-p_name header-p"><i class="fa fa-hacker-news" aria-hidden="true"></i></p>
-        <p class="content-p_main__text header-p">MIS XV EN</p>
         
         <div class="content-container_date">
-            <p class="content-p_date header-p">42: 08 : 02: 20</p>
+            <div>
+            <h4 class="content-p_main__text header-p">MIS XV EN</h4>
+            </div> 
+            <div>
+            <div class="date_value">
+            <p id="dias" class="content-p_date header-p"></p>
+            <p class="date_value_label">Dias</p>
         </div>
+        <div class="date_value">
+            <p id="horas" class="content-p_date header-p"></p>
+            <p class="date_value_label">Horas</p>
+
+        </div>
+        <div class="date_value">
+            <p id="minutos" class="content-p_date header-p"></p>
+            <p class="date_value_label">Minutos</p>
+
+        </div>
+        <div class="date_value">
+            <p id="segundos" class="content-p_date header-p"></p>
+            <p class="date_value_label">Segundos</p>
+
+        </div>
+            </div>
+        </div>
+
     </div>
 </header>
