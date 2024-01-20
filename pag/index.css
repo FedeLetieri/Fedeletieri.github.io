@@ -5,9 +5,9 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+    width: 100%; 
+     height: 100%;
+      overflow-x: hidden;  
 }
 
 .body_iframe{
@@ -30,3 +30,10 @@ body {
     background-color: ghostwhite;
 }
 
+.body_footer{
+    height: 26rem;
+}
+
+.body_aside{
+    height: 50rem;
+}
