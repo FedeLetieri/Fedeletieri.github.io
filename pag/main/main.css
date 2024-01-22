@@ -13,8 +13,39 @@
     width: 100%;
     height: auto;
     align-items: center;
+    opacity: 0; /* Configura la opacidad inicial en 0 */
+    transform: translateY(20px); /* Configura una transformación inicial, como un desplazamiento hacia abajo */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Aplica una transición de 0.5 segundos con efecto ease-in-out */
+
 
 }
+
+.container-content.loaded {
+    opacity: 1; /* Configura la opacidad final en 1 cuando la clase 'loaded' se agrega */
+    transform: translateY(0); /* Configura la transformación final en 0 (sin desplazamiento) */
+}
+
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.container-content {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out; /* Aplica la animación de fadeInUp durante 0.5 segundos con efecto ease-in-out */
+  }
+  
+.container-content.loaded {
+    animation-fill-mode: forwards; /* Mantiene el estado final de la animación después de completarse */
+  }
+
 
 .content-top{
     width: 100%;
@@ -118,6 +149,12 @@
     padding: 15px;
     text-decoration: none;
     width: auto;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block; /* Agrega esta línea */
+}
+
+.main-link__a:hover{
+    transform: scale(1.1);
 }
 
 .icon-ubication{
