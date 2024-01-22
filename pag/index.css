@@ -37,5 +37,7 @@ body {
 }
 
 .body_aside{
-    height: 50rem;
+    height: 40rem;
+    background-color: rebeccapurple;
 }
+
