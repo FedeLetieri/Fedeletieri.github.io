@@ -1,18 +1,21 @@
-.body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+body{
+    height: auto;
 }
+
 
 .article__container{
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .article-title__content{
     margin-top: 40px;
-
     min-height: 10%;
+
 }
 
 .content__icon{
@@ -43,23 +46,18 @@
     font-size: 1.6em;
 }
 
-.book_photos-column img{
-    width: 13em;
-    height: 18em; /* Ajusta la altura según tus necesidades */
-    object-fit: cover; /* Ajusta el método de ajuste según tus necesidades */
-    margin: 5px;
-    border-radius: 5%;
-}
-
 .article-book_photos{
-    display: flex;
-    padding: 5px;
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1.5fr));
 }
 
-.book_photos-column{
-    flex: 0 0 50%; /* Ajusta el tamaño de la columna según tus necesidades */
-    padding: 10px;
-    box-sizing: border-box; /* Asegura que el padding no afecte al ancho real */
-
+.article-book_photos img{
+    max-width: 350px;
+    max-height: 450px;
+    width: 90%;
+    height: 90%;
+    justify-self: center;
+    align-self: center;
 }
-
