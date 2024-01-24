@@ -37,24 +37,52 @@ body {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     
     .body_article{
-        height: 1600px ;
+        height: 1800px ;
     }
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+    
+    .body_article{
+        height: 1500px ;
+    }
+}
+
+@media (max-width: 949px) {
+    
+    .body_article{
+        height: 2100px ;
+    }
+}
+
+@media (max-width: 730px) {
     
     .body_article{
         height: 2000px ;
     }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 650px) {
     
     .body_article{
-        height: 4000px ;
+        height: 1800px ;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .body_article{
+        height: 1600px ;
+    }
+}
+
+@media (max-width: 504px) {
+    
+    .body_article{
+        height: 2000px ;
     }
 }
